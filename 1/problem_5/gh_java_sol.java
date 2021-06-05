@@ -2,16 +2,16 @@ import java.io.*;
 import java.lang.*;
 import java.util.*;
 class Card{
-    private final int op;
+    private final String op;
     private final int id;
-    private final int resource;
-    Card(int op, int id, int resource){
+    private final int resourceName;
+    Card(String op, int id, int resourceName){
         this.op = op;
         this.id = id;
-        this.resource = resource;
+        this.resourceName = resourceName;
     }
 
-    public int getOp() {
+    public String getOp() {
         return op;
     }
 
@@ -19,63 +19,64 @@ class Card{
         return id;
     }
 
-    public int getResource() {
-        return resource;
+    public int getResourceName() {
+        return resourceName;
     }
 }
 /*
-manager 안에 gamestate를 넣음. 
-manager가 gamestate를 가지고 판단하기 때문.
+manager 안에 state 를 넣음.
+manager 가 state 를 가지고 판단하기 때문.
 */
 class manager{
-	/*
-	manager 바깥에서 gameState의 상태를 변경하지 못하도록 처리함.
-	cardDeck은 바깥에서 한 번 초기화 하면 여기에서만 변경될 수 있도록 처리.
-	*/
+    /*
+    manager 바깥에서 game state 의 상태를 변경하지 못하도록 처리함.
+    card 덱은 바깥에서 한 번 초기화 하면 여기에서만 변경될 수 있도록 처리.
+    */
     private final gameState gs;
-    manager(Deque<Card> deck){
-        gs = new gameState(deck);
+    manager(int peopleNum, Deque<Card> deck){
+        gs = new gameState(peopleNum, deck);
     }
 
     public int doTurn(int peopleNum) {
         Card curCard = gs.getCurCard(peopleNum);
-        if(curCard.getOp() == 1)
-            gs.discardCard(peopleNum);
-        else if(curCard.getOp() == 2)
-        {
-            if(!gs.checkOccupyResource(curCard.getResource())){
-                gs.getResource(curCard.getResource());
+        switch(curCard.getOp()){
+            case "acquire":
+                if(!gs.checkOccupyResource(curCard.getResourceName())){
+                    gs.occupyResource(curCard.getResourceName());
+                    gs.discardCard(peopleNum);
+                }
+                break;
+            case "release":
+                gs.releaseResource(curCard.getResourceName());
+            case "next":
                 gs.discardCard(peopleNum);
-            }
-        }
-        else
-        {
-            gs.releaseResource(curCard.getResource());
-            gs.discardCard(peopleNum);
+                break;
         }
         return curCard.getId();
     }
-	/*
-	gameState는 resource의 occupy 상태, 누가 어떤 카드를 들고 있는지, deck이 들어가 있음.
-	*/
+    /*
+    game state 는 resource 의 occupy 상태,
+    누가 어떤 카드를 들고 있는지, deck 이 들어가 있음.
+    */
     static class gameState{
         private final HashSet<Integer> resource = new HashSet<>();
-        private final Card []card = new Card[500001];
+        private final Card []peopleKeepCard;
         private final Deque<Card> deck;
-        gameState(Deque<Card> deck){
+        gameState(int peopleNum, Deque<Card> deck){
+            this.peopleKeepCard = new Card[peopleNum + 1];
             this.deck = deck;
         }
         public Card getCurCard(int peopleNum){
-            if(card[peopleNum] == null)
-                card[peopleNum] = deck.pollFirst();
-            return card[peopleNum];
+            if(peopleKeepCard[peopleNum] == null)
+                peopleKeepCard[peopleNum] = deck.pollFirst();
+            return peopleKeepCard[peopleNum];
         }
 
         public void discardCard(int peopleNum) {
-            card[peopleNum] = null;
+            peopleKeepCard[peopleNum] = null;
         }
 
-        public void getResource(int resourceNum){
+        public void occupyResource(int resourceNum){
             resource.add(resourceNum);
         }
 
@@ -103,24 +104,17 @@ public class Main {
         for(int i=0;i<T;i++){
             line = bf.readLine().split(" ");
             int id = Integer.parseInt(line[0]);
-            int op = 0;
             if(line[1].compareTo("next") == 0)
-                op = 1;
-            else if(line[1].compareTo("acquire") == 0)
-                op = 2;
+                cList.add(new Card(line[1], id,-1));
             else
-                op = 3;
-            if(op == 1)
-                cList.add(new Card(1, id,-1));
-            else
-                cList.add(new Card(op, id, Integer.parseInt(line[2])));
+                cList.add(new Card(line[1], id, Integer.parseInt(line[2])));
         }
-        manager mg = new manager(new ArrayDeque<>(cList));
+        manager mg = new manager(n, new ArrayDeque<>(cList));
         StringBuilder sb = new StringBuilder();
         for(int i=0;i<T;i++){
             int peopleNum = game[i];
             int ret = mg.doTurn(peopleNum);
-            sb.append(ret+"\n");
+            sb.append(ret).append("\n");
         }
         System.out.println(sb.toString());
     }
