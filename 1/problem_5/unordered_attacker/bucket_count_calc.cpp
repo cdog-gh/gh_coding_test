@@ -11,11 +11,11 @@ int main(void)
     for(ll i=1; i<=300000; i++)
     {
         ll kei = i + 1;
-		
-		//3*10^5 item insert.
+        
+        //3*10^5 item insert.
         ss.insert(kei);
     }
-	//and get the bucket number
+    //and get the bucket number
     printf("%d\n",(int)ss.bucket_count());
     return 0;
 }

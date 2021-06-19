@@ -13,12 +13,12 @@ void dfs(int cx,int cy,int ans,int depth)
             mmx = cur_ans;
         return;
     }
-	/*
-	이동할 수 있는 거리는 t-depth이고, 이 때 마다 고구마를 먹는다면 
-	고구마는 cur_ans + (t-depth)만큼 먹을 수 있다.
-	
-	그런데 이 값이 답보다 작거나 같다면 추가로 탐색할 필요가 없다.
-	*/
+    /*
+    이동할 수 있는 거리는 t-depth이고, 이 때 마다 고구마를 먹는다면 
+    고구마는 cur_ans + (t-depth)만큼 먹을 수 있다.
+    
+    그런데 이 값이 답보다 작거나 같다면 추가로 탐색할 필요가 없다.
+    */
     if(cur_ans + (t-depth) <= mmx)
         return;
     vis[cx][cy]++;
