@@ -1,5 +1,5 @@
 
-# gh_coding_test
+## gh_coding_test
 gahui 코딩 테스트 해설과 팁을 담아 놓은 repo입니다.
 
 ## 1회 [바로 가기](https://www.acmicpc.net/category/detail/2546)
