@@ -40,5 +40,5 @@
 * (x, 0), (0, x) 방향으로 공격하는 데이터 (단, **x는 0이 아닌 정수**)
 * 음수에 대한 처리
 
-double이나 float와 같은 실수 데이터는 정밀도를 신경써야 합니다. 실수 오차에 대한 데이터는 [여기](https://github.com/cdog-gh/gh_coding_test/blob/main/2/5/double_att.in)에 있습니다. 
+double이나 float와 같은 실수 데이터는 정밀도를 신경써야 합니다. 실수 오차에 대한 데이터는 [여기](https://github.com/cdog-gh/gh_coding_test/blob/main/2/5/double_att.in)에 있습니다.  
 실제로 이 함정에만 걸려서, *ccw* 알고리즘으로 선회하신 분도 계셨습니다.
