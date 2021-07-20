@@ -4,7 +4,7 @@ Author : ryunian
 import java.io.*;
 import java.util.*;
 
-class ryunian {
+class Main {
     private static class Node {
         String str;
         String extension;
