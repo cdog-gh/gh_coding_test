@@ -1,7 +1,10 @@
+/*
+Author : ryunian
+*/
 import java.io.*;
 import java.util.*;
 
-public class gh_java2 {
+class ryunian {
     private static class Node {
         String str;
         String extension;
