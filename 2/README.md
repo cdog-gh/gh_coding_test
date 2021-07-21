@@ -11,7 +11,7 @@
 |22232|string 파싱 및 equal, range query 간접 연계|21771|
 |22233|string 파싱 연계|21772|
 
-## 22232. 가희와 파일탐색기 [바로가기](https://www.acmicpc.net/problem/22232)  
+## 22232. 가희와 파일탐색기 [바로가기](https://www.acmicpc.net/problem/22232) [분석](https://codingdog.tistory.com/554)  
 간단한 정렬문제입니다. 잘못 구현할 수 있는 포인트는 아래와 같습니다.
 * compare(a, b)가 True 이면서 **compare(b, a)가 True가 되게 리턴**하는 경우  
 * string을 long long으로 압축할 때, 10자 미만인 string에 대한 처리
