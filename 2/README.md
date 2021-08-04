@@ -24,7 +24,7 @@
 * 문자열 정렬을 할 때, 두 key의 *compare* 시간이 오래 걸릴 수도 있다.
 
 
-## 22234. 가희와 은행 [바로가기](https://www.acmicpc.net/problem/22234)  
+## 22234. 가희와 은행 [바로가기](https://www.acmicpc.net/problem/22234) [분석](https://codingdog.tistory.com/567)  
 잘 읽어보면 *Round Robin*과 비슷함을 알 수 있습니다. 출력해야 하는 시간이 **20만 이하**이니, 이 부분만 이벤트 배열에 넣으면 됩니다.
 * N+M명의 사람들을 sort() 메서드로 정렬하는 경우
   * sort 메서드는 **stable 하지 않으므로** 조심하셔야 합니다. 비슷한 개념의 문제 중에는, [2910번](https://www.acmicpc.net/problem/2910)이 있습니다.
