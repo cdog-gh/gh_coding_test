@@ -19,5 +19,5 @@ gahui 코딩 테스트 해설과 팁을 담아 놓은 repo입니다.
 * 가희와 btd5  [바로가기](https://www.acmicpc.net/problem/22238) 
 * 가희와 수인 분당선 1  [바로가기](https://www.acmicpc.net/problem/22235) 
 * 가희와 비행기  [바로가기](https://www.acmicpc.net/problem/22236) 
-* 가희와 거북이 인형  [바로가기](https://www.acmicpc.net/problem/22237) [분석](https://codingdog.tistory.com/564) 
+* 가희와 거북이 인형  [바로가기](https://www.acmicpc.net/problem/22237) [분석](https://codingdog.tistory.com/564) [분석2](https://codingdog.tistory.com/590) 
 * 가희와 읽기 쓰기 놀이 2  [바로가기](https://www.acmicpc.net/problem/22239) 
