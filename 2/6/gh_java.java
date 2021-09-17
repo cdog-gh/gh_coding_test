@@ -10,14 +10,14 @@ class Main
         long []dp = new long[4002];
         dp[0] = dp[2] = 1L;
         for(int i=4; i<=4000; i=i+2)
-	    {
-		    dp[i] = dp[i-2];
-		    for(int j=2; j<i; j=j+2)
-		    {
-			    dp[i] = dp[i] + dp[j]*dp[i-j-2];
-			    dp[i] %= M;
-		    }
+        {
+            dp[i] = dp[i-2];
+            for(int j=2; j<i; j=j+2)
+            {
+                dp[i] = dp[i] + dp[j]*dp[i-j-2];
+                dp[i] %= M;
+            }
         }
         System.out.println(dp[n-2]+"");
-	}
+    }
 }
