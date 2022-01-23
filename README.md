@@ -21,3 +21,12 @@ gahui 코딩 테스트 해설과 팁을 담아 놓은 repo입니다.
 * 가희와 비행기  [바로가기](https://www.acmicpc.net/problem/22236) [분석](https://codingdog.tistory.com/653) 
 * 가희와 거북이 인형  [바로가기](https://www.acmicpc.net/problem/22237) [분석](https://codingdog.tistory.com/564) [분석2](https://codingdog.tistory.com/590) 
 * 가희와 읽기 쓰기 놀이 2  [바로가기](https://www.acmicpc.net/problem/22239) 
+
+
+## 3회 [바로 가기](https://www.acmicpc.net/contest/view/755)
+* 가희와 무궁화호 [바로가기](https://www.acmicpc.net/problem/24336) 
+* 가희와 탑 [바로가기](https://www.acmicpc.net/problem/24337) 
+* 가희와 쓰레기 놀이 [바로가기](https://www.acmicpc.net/problem/24339)
+* 가희와 베개 [바로가기](https://www.acmicpc.net/problem/24338)
+* 가희와 btd5 2 [바로가기](https://www.acmicpc.net/problem/24340) 
+
