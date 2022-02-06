@@ -58,13 +58,13 @@ int bfs(int upper_bound)
         for(set <int>::iterator it = con[obj_id].begin(); it != con[obj_id].end(); it++)
         {
             int ref_id = (*it);
-			//printf("ref_id = %d\n",ref_id);
+            //printf("ref_id = %d\n",ref_id);
             REF ref_item = ref[ref_id];
             //printf("item = %d %d %d\n",ref_item.a, ref_item.b, ref_item.weak);
-			if(ref_item.weak > upper_bound)
+            if(ref_item.weak > upper_bound)
                 continue;
             
-			int b_obj_id = ref_item.b;
+            int b_obj_id = ref_item.b;
             if(visit.find(b_obj_id) != visit.end())
                 continue;
             
