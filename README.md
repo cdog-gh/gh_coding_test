@@ -10,7 +10,7 @@ gahui 코딩 테스트 해설과 팁을 담아 놓은 repo입니다.
 * 가희의 자원 놀이  [바로가기](https://www.acmicpc.net/problem/21775) [분석](https://codingdog.tistory.com/666) 
 * 가희와 읽기 쓰기 놀이  [바로가기](https://www.acmicpc.net/problem/21776) [분석](https://codingdog.tistory.com/581) 
 * 리버스 가희와 프로세스 1  [바로가기](https://www.acmicpc.net/problem/21777) [분석](https://codingdog.tistory.com/626) 
-* 가희와 프로세스 2  [바로가기](https://www.acmicpc.net/problem/21778) 
+* 가희와 프로세스 2  [바로가기](https://www.acmicpc.net/problem/21778) [분석](https://codingdog.tistory.com/668) 
 
 ## 2회 (패스트캠퍼스 초격차 모의고사 6회) [바로 가기](https://www.acmicpc.net/category/detail/2612)
 * 가희와 파일 탐색기  [바로가기](https://www.acmicpc.net/problem/22232) [분석](https://codingdog.tistory.com/554) 
