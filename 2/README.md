@@ -18,7 +18,7 @@
 
 *equal*이 아닌 상대 비교 처리가 필요하므로, 2번째의 경우, 10자 미만일 때, 나머지 부분을 *padding* 처리하시면 됩니다. 
 
-## 22233. 가희와 키워드 [바로가기](https://www.acmicpc.net/problem/22233)
+## 22233. 가희와 키워드 [바로가기](https://www.acmicpc.net/problem/22233) [분석](https://codingdog.tistory.com/669) 
 반대로 이것은 키워드의 *equal*이 중요하므로 *padding* 처리를 하지 않고 압축하셔도 됩니다. 이 문제는 아래를 주의하셔야 합니다.
 * 나올 수 있는 *keyword* 수가 **최대 220만**개여서 set, map을 이용하면 시간초과가 난다.
 * 문자열 정렬을 할 때, 두 key의 *compare* 시간이 오래 걸릴 수도 있다.
