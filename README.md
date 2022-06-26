@@ -30,3 +30,12 @@ gahui 코딩 테스트 해설과 팁을 담아 놓은 repo입니다.
 * 가희와 베개 [바로가기](https://www.acmicpc.net/problem/24338) [분석](https://codingdog.tistory.com/657) 
 * 가희와 btd5 2 [바로가기](https://www.acmicpc.net/problem/24340) 
 
+
+## 4회 [바로 가기](https://www.acmicpc.net/contest/view/819)
+* 가희와 방어율 뮤시 [바로가기](https://www.acmicpc.net/problem/25238) 
+* 가희와 카오스 파풀라투스 [바로가기](https://www.acmicpc.net/problem/25239) 
+* 가희와 파일 탐색기 2 [바로가기](https://www.acmicpc.net/problem/25240) 
+* 가희와 중부내륙선 [바로가기](https://www.acmicpc.net/problem/25243) 
+* 가희와 지하철 [바로가기](https://www.acmicpc.net/problem/25241) 
+* 가희와 사직구장 [바로가기](https://www.acmicpc.net/problem/25242) 
+* 가희와 영상추천 시스템 [바로가기](https://www.acmicpc.net/problem/25244)
