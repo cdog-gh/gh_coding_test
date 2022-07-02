@@ -34,7 +34,7 @@ gahui 코딩 테스트 해설과 팁을 담아 놓은 repo입니다.
 ## 4회 [바로 가기](https://www.acmicpc.net/contest/view/819)
 * 가희와 방어율 무시 [바로가기](https://www.acmicpc.net/problem/25238) 
 * 가희와 카오스 파풀라투스 [바로가기](https://www.acmicpc.net/problem/25239) 
-* 가희와 파일 탐색기 2 [바로가기](https://www.acmicpc.net/problem/25240) 
+* 가희와 파일 탐색기 2 [바로가기](https://www.acmicpc.net/problem/25240) [분석](https://codingdog.tistory.com/709)
 * 가희와 중부내륙선 [바로가기](https://www.acmicpc.net/problem/25243) 
 * 가희와 지하철 [바로가기](https://www.acmicpc.net/problem/25241) 
 * 가희와 사직구장 [바로가기](https://www.acmicpc.net/problem/25242) 
