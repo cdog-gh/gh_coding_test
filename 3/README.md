@@ -1,6 +1,11 @@
-## 가희와 함께 하는 코딩 테스트 3회 
-1월 23일 13시부터 18시 10분까지 3회 코딩테스트가 열렸습니다.   
-1, 2회에서 연계한 문제들과, 간단한 리뷰, 같이 풀어보면 좋은 문제들을 언급하도록 하겠습니다.
+# 3회 [바로가기](https://www.acmicpc.net/contest/view/755) 
+1월 23일 13시부터 18시 10분까지 3회 코딩테스트가 열렸습니다. 
+ 
+* 가희와 무궁화호 [바로가기](https://www.acmicpc.net/problem/24336) 
+* 가희와 탑 [바로가기](https://www.acmicpc.net/problem/24337) 
+* 가희와 쓰레기 놀이 [바로가기](https://www.acmicpc.net/problem/24339) [비하인드](https://codingdog.tistory.com/659) [분석](https://codingdog.tistory.com/660) 
+* 가희와 베개 [바로가기](https://www.acmicpc.net/problem/24338) [분석](https://codingdog.tistory.com/657) 
+* 가희와 btd5 2 [바로가기](https://www.acmicpc.net/problem/24340) 
 
 #### 연계 문제들
 |문제번호|내용|연계문제|

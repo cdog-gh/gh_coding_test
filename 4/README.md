@@ -1,5 +1,14 @@
 ## 가희와 함께 하는 코딩 테스트 4회    
-4회 코딩테스트는 **4년 전에 출제한 문제**도 있던 만큼 프로듀스 48이나 jpop 관련 키워드가 상당히 많았습니다. 1, 2, 3회에서 연계한 문제들과, 간단한 리뷰, 같이 풀어보면 좋은 문제들을 언급하도록 하겠습니다.
+4회 코딩테스트는 **4년 전에 출제한 문제**도 있던 만큼 프로듀스 48이나 jpop 관련 키워드가 상당히 많았습니다. 
+1, 2, 3회에서 연계한 문제들과, 간단한 리뷰, 같이 풀어보면 좋은 문제들을 언급하도록 하겠습니다.
+
+* 가희와 방어율 무시 [바로가기](https://www.acmicpc.net/problem/25238) 
+* 가희와 카오스 파풀라투스 [바로가기](https://www.acmicpc.net/problem/25239) 
+* 가희와 파일 탐색기 2 [바로가기](https://www.acmicpc.net/problem/25240) [분석](https://codingdog.tistory.com/709)
+* 가희와 중부내륙선 [바로가기](https://www.acmicpc.net/problem/25243) 
+* 가희와 지하철 [바로가기](https://www.acmicpc.net/problem/25241) 
+* 가희와 사직구장 [바로가기](https://www.acmicpc.net/problem/25242) 
+* 가희와 영상추천 시스템 [바로가기](https://www.acmicpc.net/problem/25244)
 
 #### 연계 문제들
 |문제번호|내용|연계문제|

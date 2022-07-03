@@ -1,7 +1,15 @@
-## 가희와 함께 하는 코딩 테스트 1회 (패스트캠퍼스 초격차 모의고사 4회) 
+# 1회 (패스트캠퍼스 초격차 모의고사 4회) [바로 가기](https://www.acmicpc.net/contest/view/644) 
 5월 23일 13시부터 18시까지 1회 코딩테스트가 열렸습니다.   
-1회 코딩 테스트에서 보고자 했던 것은 **조건을 얼마나 잘 읽느냐**였습니다.  
-어떤 것을 읽어내는 것이 중요했는지 1, 4, 5번 문제를 브리핑 해 보겠습니다.
+
+* 가희야 거기서 자는 거 아니야  [바로가기](https://www.acmicpc.net/problem/21771)
+* 가희의 고구마 먹방  [바로가기](https://www.acmicpc.net/problem/21772) [분석](https://codingdog.tistory.com/529) 
+* 가희와 프로세스 1  [바로가기](https://www.acmicpc.net/problem/21773) [분석](https://codingdog.tistory.com/537) 
+* 가희와 로그 파일  [바로가기](https://www.acmicpc.net/problem/21774) [분석](https://codingdog.tistory.com/519) 
+* 가희의 자원 놀이  [바로가기](https://www.acmicpc.net/problem/21775) [분석](https://codingdog.tistory.com/666) 
+* 가희와 읽기 쓰기 놀이  [바로가기](https://www.acmicpc.net/problem/21776) [분석](https://codingdog.tistory.com/581) 
+* 리버스 가희와 프로세스 1  [바로가기](https://www.acmicpc.net/problem/21777) [분석](https://codingdog.tistory.com/626) 
+* 가희와 프로세스 2  [바로가기](https://www.acmicpc.net/problem/21778) [분석](https://codingdog.tistory.com/668) 
+
 
 ## 21771. 가희야 거기서 자는 거 아니야 [바로가기](https://www.acmicpc.net/problem/21771)  
 * **베개 중의 일부가 가희에 의해서 가려진 상태**라면, 가희는 베게 위에서 자고 있습니다.  
