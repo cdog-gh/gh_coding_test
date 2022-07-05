@@ -9,6 +9,7 @@ public class Main {
         int Rp = sc.nextInt();
         int Cp = sc.nextInt();
         sc.nextLine();
+        //use stream filter & count
         for(int i=0;i<R;i++)
             ans += sc.nextLine().chars().filter(v -> v == 'P').count();
         if(ans != Rp * Cp)
