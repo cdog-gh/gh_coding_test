@@ -17,7 +17,7 @@
 #  |              |  |      |
 #  |              |  |      |--- wrong solution files
 #  |              |  |
-#  |              |  |--- solution files (c++, java. python)
+#  |              |  |--- solution files (c++, java, python)
 #  |              |
 #  |              |- sol (1th coding test solution file)
 #  |              |
