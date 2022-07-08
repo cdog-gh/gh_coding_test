@@ -12,11 +12,25 @@
 #  |
 #  |- 1 (1th coding test info folder)
 #  |              |- 1 (problem 1 folder)
+#  |              |  |
+#  |              |  |--- wrong (wrong answer folder)
+#  |              |  |      |
+#  |              |  |      |--- wrong solution files
+#  |              |  |
+#  |              |  |--- solution files (c++, java. python)
+#  |              |
+#  |              |- sol (1th coding test solution file)
+#  |              |
 #  |              |- 2 (problem 2 folder)
 #  |             ...
 # ...
 ```
 * n회 대회에 대한 자료로 들어가시면, README와 각 문제에 대한 폴더들이 있습니다.
-* README 에는 아래와 같은 내용들이 있습니다.
-  * 대회에 출제된 문제들과 **백준 링크**
-  * **주요 문제**들에 대한 간단한 리뷰
+  * README 에는 아래와 같은 내용들이 있습니다.
+    * 대회에 출제된 문제들과 **백준 링크**
+    * **주요 문제**들에 대한 간단한 리뷰
+    * 간단한 솔루션 스케치
+  * 솔루션에는 문제별로 아래와 같은 내용들이 있습니다. **COCI format**을 따릅니다.
+    * 출제 의도
+    * 솔루션
+    * 필요한 스킬
