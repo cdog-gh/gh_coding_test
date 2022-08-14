@@ -3,13 +3,16 @@ import java.lang.*;
 import java.io.*;
 class JoFileSystem{
     private static final Set<String> fileExtensionSet = new HashSet<>();
+    
     public static void addSupportExtension(String extension){
         fileExtensionSet.add(extension);
     }
+    
     public static boolean getIsSupportedExtension(String extension){
         return fileExtensionSet.contains(extension);
     }
 }
+
 class JoFileUtil{
     public static String getName(String filename)
     {
@@ -17,6 +20,7 @@ class JoFileUtil{
             filename.lastIndexOf('.') + 1
         );
     }
+    
     public static String getExtension(String filename)
     {
         if(filename.lastIndexOf('.') == -1)
@@ -26,27 +30,34 @@ class JoFileUtil{
         );
     }
 }
+
 class JoFile implements Comparable<JoFile>{
     private final String name;
     private final String extension;
     private final String filename;
+    
     JoFile(String filename){
         this.filename = filename;
         this.name = JoFileUtil.getName(filename);
         this.extension = JoFileUtil.getExtension(filename);
     }
+    
     public String getFileName(){
         return this.filename;
     }
+    
     public String getName(){
         return this.name;
     }
+    
     public String getExtension(){
         return this.extension;
     }
+    
     public String toString(){
         return this.filename;
     }
+    
     @Override
     public int compareTo(JoFile another) {
         boolean thisExtensionSupported = JoFileSystem.getIsSupportedExtension(this.extension);
@@ -58,6 +69,7 @@ class JoFile implements Comparable<JoFile>{
         return this.extension.compareTo(another.getExtension());
     }
 }
+
 public class Main {
     public static void main(String []args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
