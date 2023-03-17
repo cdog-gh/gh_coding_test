@@ -1,104 +1,13 @@
-# 1회 (패스트캠퍼스 초격차 모의고사 4회) [바로 가기](https://www.acmicpc.net/contest/view/644) 
+## 1회 [바로 가기](https://www.acmicpc.net/contest/view/644) 
 5월 23일 13시부터 18시까지 1회 코딩테스트가 열렸습니다.   
 
-* 가희야 거기서 자는 거 아니야  [바로가기](https://www.acmicpc.net/problem/21771)
-* 가희의 고구마 먹방  [바로가기](https://www.acmicpc.net/problem/21772) [분석](https://codingdog.tistory.com/529) 
-* 가희와 프로세스 1  [바로가기](https://www.acmicpc.net/problem/21773) [분석](https://codingdog.tistory.com/537) 
-* 가희와 로그 파일  [바로가기](https://www.acmicpc.net/problem/21774) [분석](https://codingdog.tistory.com/519) 
-* 가희의 자원 놀이  [바로가기](https://www.acmicpc.net/problem/21775) [분석](https://codingdog.tistory.com/666) 
-* 가희와 읽기 쓰기 놀이  [바로가기](https://www.acmicpc.net/problem/21776) [분석](https://codingdog.tistory.com/581) 
-* 리버스 가희와 프로세스 1  [바로가기](https://www.acmicpc.net/problem/21777) [분석](https://codingdog.tistory.com/626) 
-* 가희와 프로세스 2  [바로가기](https://www.acmicpc.net/problem/21778) [분석](https://codingdog.tistory.com/668) 
-
-
-## 21771. 가희야 거기서 자는 거 아니야 [바로가기](https://www.acmicpc.net/problem/21771)  
-* **베개 중의 일부가 가희에 의해서 가려진 상태**라면, 가희는 베게 위에서 자고 있습니다.  
-* 가희는 베개 위에서 자고 있거나, 베개 아래에서 자고 있습니다.  
-
-즉, 가희의 일부도 가려지고, 베개의 일부도 가려지는 경우는 없음을 알 수 있습니다. 따라서,  _P_ 와 _G_ 가 몇 번 나오는지만 보면 됩니다. 
-
-## 21772. 가희의 고구마 먹방 [바로가기](https://www.acmicpc.net/problem/21772) [분석](https://codingdog.tistory.com/529)
-* 가희는 **총 10번** 이동할 수 있습니다.
-* 상, 하, 좌, 우 총 **4가지 방법** 으로 이동할 수 있습니다.
-
-그렇기 때문에 _brute force_ 로 풀이해도 4^10 = 2^20개의 가짓수에 대해 따져주면 됩니다. 다만 주의해야 할 점은 **같은 장소** 에 방문하는 경우입니다. 이 처리는 map, set 등으로 **중복 제거를 하는 자료구조**를 이용하면 됩니다.
-
-## 21773. 가희와 프로세스 1 [바로가기](https://www.acmicpc.net/problem/21773) [분석](https://codingdog.tistory.com/537)
-프로그램 A가 1초 실행이 되었을 때, A를 제외한 나머지 프로그램의 우선 순위가 1 증가합니다. 당연하게도, 나머지 프로그램의 우선 순위를 모두 1씩 증가시키는 방법을 쓰면 시간초과가 납니다. 프로세스 1의 우선순위가 10, 프로세스 2의 우선 순위가 5라고 했을 때
-* 프로세스 1이 1초동안 실행됩니다.
-* 그 후, 프로세스 2의 **우선 순위는 6**이 됩니다. 1의 우선순위는 그대로 10입니다.
-
-이를 아래와 같은 상황으로 바꿔 보겠습니다.
-* 프로세스 1이 1초동안 실행됩니다.
-* 그 후, 프로세스 1의 우선 순위는 **1이 감소한 9**가 됩니다. 2의 우선 순위는 그대로 5입니다.
-
-상황이 같을까요? 사실 달라 보입니다만, 1의 입장에서 봤을 때 2의 우선순위 차이는 둘 다 동일함을 알 수 있습니다. 이를, 간파했다면, 1 틱마다
-* 우선 순위가 제일 높은 프로세스를 하나 선택합니다.
-* 실행을 한 우선 순위가 제일 높은 프로세스의 우선 순위를 1 감소시킵니다.
-
-을 수행하면 됩니다. 우선순위가 제일 높은 것만 선택하려면 priority queue가 적합합니다. Insert, Delete에 대해 O(log(n))의 복잡도를 가지기 때문입니다.
-
-## 21774. 가희와 로그 파일 [바로가기](https://www.acmicpc.net/problem/21774)  [분석](https://codingdog.tistory.com/519)
-시간 제한을 보면 2초로 꽤 넉넉함을 알 수 있습니다. 시각 데이터는 60만개 주어집니다.  문자열의 길이는 최대 20자이고, 60만개의 시각이 들어올 때, 1200만 x 20 = 2.4억이 됩니다.  이 부분은 구분자를 가지고 _long long_ 형으로 압축한다면, 20이 빠질 수 있습니다.  
-  
-이 문제에서 더 중요했던 점은 아래 2가지 입니다.  
-* 주어진 시작 시각과 종료 시각 **사이**에, ~
-* 시각은 **YYYY-MM-DD hh:mm:ss형식**으로 주어진다.
-  
-형식이 같고 **시각의 선후 관계**만 파악하면 되므로, 문자열로 처리하면 됩니다. 그런데 왜 **문자열로 처리**해도 될까요? 아래 사실을 관찰하면 그 이유를 알 수 있습니다.
-* _ss_ 가 하나 증가하는 과정에서 _ss_ 가 59에서 00으로 변하면, _mm_ 이 하나 증가한다.
-* _mm_ 이 하나 증가하는 과정에서 _mm_ 이 59에서 00으로 변하면, _hh_ 가 하나 증가한다.
-* _hh_ 가 하나 증가하는 과정에서 _hh_ 가 23에서 00으로 변하면, _DD_ 가 하나 증가한다.
-* _DD_ 가 하나 증가하는 과정에서 _YYYY_ 년 _MM_ 월에 있는 달 수를 초기화면 _MM_ 이 하나 증가한다.
-* _MM_ 이 하나 증가하는 과정에서 _MM_ 이 12에서 01로 변하면 _YYYY_ 가 하나 증가한다.
-
-이 5가지의 사실을 잘 보면, 결국 시각이 증가하면, 6가지 중 하나임을 알 수 있습니다. 증가하기 전 시각을 YYYY-MM-DD hh:mm:ss, 증가 후의 시각을 YYYY'-MM'-DD' hh':mm':ss'라 하면
-* _YYYY_ = _YYYY'_, _MM_ = _MM'_, _DD_ = _DD'_, _hh_ = _hh'_, _mm_ = _mm'_, _ss_ < _ss'_
-* _YYYY_ = _YYYY'_, _MM_ = _MM'_, _DD_ = _DD'_, _hh_ = _hh'_, _mm_ < _mm'_
-* _YYYY_ = _YYYY'_, _MM_ = _MM'_, _DD_ = _DD'_, _hh_ < _hh'_
-* _YYYY_ = _YYYY'_, _MM_ = _MM'_, _DD_ < _DD'_
-* _YYYY_ = _YYYY'_, _MM_ < _MM'_
-* _YYYY_ < _YYYY'_
-
-이제 고정된 자릿수 _AAAA_ , _AAAA'_ 가 있고, Leading zero가 있을 때, _AAAA_ < _AAAA'_ 라면 _AAAA_ 를 문자열로 바꾼 _SSSS_ 는 _AAAA'_ 를 문자열로 바꾼 _SSSS'_ 보다 **아스키 코드 순으로 뒤에 있음** 을 보이면 됩니다.
-이는 '0', '1', ... , '9'가 각각 48, ... , 57이고, 0보다는 1, 1보다는 2, ... , 8보다는 9가 크다는 사실로 증명을 할 수 있습니다.
-
-## 21775. 가희의 자원놀이 [바로가기](https://www.acmicpc.net/problem/21775)  [분석](https://codingdog.tistory.com/666)
-문제가 상당히 긴 편이여서, 조건을 잡기가 쉽지 않았습니다.  체감 난이도를 결정지었던 결정적인 조건은 아래와 같습니다.
- 
-* 자원 카드  _n_ 을 획득한 사람이 다시 _acquire  n_ 을 수행하지 않는다.
-* 획득하지 않은 자원 카드를 시각은 _release_ 하는 경우는 없다.
-  
-그렇기 때문에, **자원을 누군가 가지고 있는지**만 관리하면 됩니다. 
-
-## 21776. 가희와 읽기 쓰기 놀이 [바로가기](https://www.acmicpc.net/problem/21776)  [분석](https://codingdog.tistory.com/581) 
-문제가 상당히 긴 편이여서, 21775번과 같이 조건을 잡기 쉽지 않았습니다. 문제를 이해하기 위해 파악해야 하는 조건은 아래와 같습니다. 
-* i번 사람이 내야 하는 **카드의 순서**는 정해져 있습니다.
-* 각 턴을 수행하는 사람은 1명이다.
-  * 만약에 2명 이상이라면, 상황이 매우 복잡해 졌을 겁니다.
-* 턴을 수행할 때, 카드에 있는 연산을 모두 수행하고 종료한다.
-  * 단위 연산이 카드에 있는 연산 모두를 수행하는 것임을 알 수 있습니다.
-  * 예제 1번에 있는 설명을 보면 조금 더 쉽게 이해할 수 있습니다.
-  
-그리고 이 문제는 _N_ 과 _C_ 가 9 입니다. **9! = 40320** 이고 문자열의 길이는 많아봐야 10입니다. 따라서 brute force를 이용해도 문제 없습니다. 
-
-## 21777. 가희와 리버스 프로세스 [바로가기](https://www.acmicpc.net/problem/21777) [분석](https://codingdog.tistory.com/626)
-21773번의 내용을 확장할 수 있는지 묻는 문제였습니다. 상대적인 우선순위로 변환해야 한다는 관찰은 21773에서 할 수 있습니다. 문제에 나온 조건을 보겠습니다.
-* 우선 순위 값이 큰 프로세스
-* 우선 순위 값이 제일 큰 프로세스가 여러 개라면, **_id_ 가 작은 순** 으로
-
-이 중 2번째 조건을 유심히 봅시다. _id_ 가 1, 3, 7, 4인 프로세스가 있고 우선 순위 값이 모두 1이라면 1, 3, 4, 7 순으로 수행될 겁니다. 
-관찰 2가지를 해 보겠습니다.
-* _id_ 가 1인 프로세스가 2번 실행되었다고 한다면 첫 번째로 실행되었을 때 우선 순위와 두 번째로 실행되었을 때 우선 순위가 다릅니다.
-* 입력에서 나온 **순증가 그룹별** 로 우선 순위를 같게 배치할 수 있다.
-
-조건 2를 반대로 보면, 감소하는 구간에서는 우선 순위를 같게 배치할 수 없습니다. 왜일까요? 예를 들어 1, 4, 2 순서로 실행되었다고 합시다.
-* 1, 4, 2를 같은 우선순위 그룹에 배치했다고 하면
-  * 2는 4보다 작습니다.
-  * 따라서 2는 4보다 먼저 실행되어야 하는데, **실제로는 4가 2보다 먼저 실행** 되었습니다.
-
-그러면 2가 처음 실행된 시점은 4가 처음 실행된 시점보다 우선 순위를 어떻게 설정하면 될까요? **1만큼 낮다고 설정** 하면 됩니다.
-
-## 21778. 가희와 프로세스 2 [바로가기](https://www.acmicpc.net/problem/21778) [분석](https://codingdog.tistory.com/668)
-21773번의 관점을 확장시켜 봅시다. 프로세스 _A_ 가 우선순위 _S_ 부터 _E_ 까지 실행된다라는 관점으로 바꾸면 어떨까요?
-* 우선 순위가 _C_ 가 되기 전까지 프로세스들은 총 몇 초만큼 실행되는가?
+|문제 번호|제목|풀러 가기|힌트|출제자 난이도|
+|:------:|:-------------:|:-----:|:-----:|:-----:|
+|A|가희야 거기서 자는 거 아니야|[바로가기](https://www.acmicpc.net/problem/21771)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/1/1)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/5.svg"></img> |
+|B|가희의 고구마 먹방|[바로가기](https://www.acmicpc.net/problem/21772)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/1/2)|<img height="25px" width="25px" src="https://static.solved.ac/tier_small/10.svg"></img>|
+|C|가희와 프로세스 1|[바로가기](https://www.acmicpc.net/problem/21773)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/1/3)|<img height="25px" width="25px" src="https://static.solved.ac/tier_small/11.svg"></img>|
+|D|가희와 로그 파일|[바로가기](https://www.acmicpc.net/problem/21774)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/1/4)|<img height="25px" width="25px" src="https://static.solved.ac/tier_small/13.svg"></img>|
+|E|가희의 자원 놀이|[바로가기](https://www.acmicpc.net/problem/21775)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/1/5)|<img height="25px" width="25px" src="https://static.solved.ac/tier_small/13.svg"></img>|
+|F|가희와 읽기 쓰기 놀이|[바로가기](https://www.acmicpc.net/problem/21776)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/1/6)|<img height="25px" width="25px" src="https://static.solved.ac/tier_small/13.svg"></img>|
+|G|리버스 가희와 프로세스 1|[바로가기](https://www.acmicpc.net/problem/21777)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/1/7)|<img height="25px" width="25px" src="https://static.solved.ac/tier_small/15.svg"></img>|
+|H|가희와 프로세스 2|[바로가기](https://www.acmicpc.net/problem/21778)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/1/8)|<img height="25px" width="25px" src="https://static.solved.ac/tier_small/16.svg"></img>|
