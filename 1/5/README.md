@@ -12,3 +12,10 @@
 <summary>🔑힌트 3</summary>
 공용 공간에 있는 자원의 수가 더 작나요? 아니면 <b>유저 공간에 있는 자원의 수</b>가 더 작나요?
 </details> 
+<details>
+<summary>💻cs</summary>
+<ul>
+  <li> dead lock <br>
+  <li> lock <br>
+</ul>
+</details>

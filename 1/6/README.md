@@ -20,3 +20,10 @@
 <summary>🔑힌트 4</summary>
 순서가 정해진 배열에서 1번째 원소를 빼면, 2번째로 내야 할 카드가 나오지요.
 </details>
+<details>
+<summary>💻cs</summary>
+<ul>
+  <li> race condition <br>
+  <li> critical section <br>
+</ul>
+</details>
