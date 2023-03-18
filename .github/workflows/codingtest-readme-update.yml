@@ -2,7 +2,7 @@ name: Auto Update CODINGTEST README
 
 on:
   schedule:
-    - cron: '5 13 * * *'
+    - cron: '*/15 * * * *'
 
 jobs:
   build:
@@ -31,7 +31,7 @@ jobs:
         git config --local user.email "${{ secrets.USER_EMAIL }}"
         git config --local user.name "${{ secrets.USER_NAME }}"
         git add .
-        git commit -m "Auto UPDATE (ALL)"
+        git commit -m "Auto UPDATE 코딩테스트 README"
     - name: Push
       uses: ad-m/github-push-action@master
       with:
