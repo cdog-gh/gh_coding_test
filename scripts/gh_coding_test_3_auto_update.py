@@ -37,4 +37,4 @@ with open("3/README.md", "w", encoding="utf8") as f:
 
     from datetime import datetime
     from datetime import timezone
-    f.write(f"마지막 업데이트 날짜 : {str(datetime.now(timezone.utc)).replace('+00:00', 'Z')}")
+    f.write(f"\n마지막 업데이트 날짜 : {str(datetime.now(timezone.utc)).replace('+00:00', 'Z')}")
