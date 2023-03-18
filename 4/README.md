@@ -1,98 +1,12 @@
-## 가희와 함께 하는 코딩 테스트 4회    
-4회 코딩테스트는 **4년 전에 출제한 문제**도 있던 만큼 프로듀스 48이나 jpop 관련 키워드가 상당히 많았습니다. 
-1, 2, 3회에서 연계한 문제들과, 간단한 리뷰, 같이 풀어보면 좋은 문제들을 언급하도록 하겠습니다.
+## 4회 [바로 가기](https://www.acmicpc.net/contest/view/819)
+6월 6일 13시부터 18시 10분까지 4회 코딩테스트가 열렸습니다.
 
-* 가희와 방어율 무시 [바로가기](https://www.acmicpc.net/problem/25238) [분석](https://codingdog.tistory.com/734) 
-* 가희와 카오스 파풀라투스 [바로가기](https://www.acmicpc.net/problem/25239) 
-* 가희와 파일 탐색기 2 [바로가기](https://www.acmicpc.net/problem/25240) [분석](https://codingdog.tistory.com/709)
-* 가희와 중부내륙선 [바로가기](https://www.acmicpc.net/problem/25243) 
-* 가희와 지하철 [바로가기](https://www.acmicpc.net/problem/25241) 
-* 가희와 사직구장 [바로가기](https://www.acmicpc.net/problem/25242) 
-* 가희와 영상추천 시스템 [바로가기](https://www.acmicpc.net/problem/25244)
-
-#### 연계 문제들
-|문제번호|내용|연계문제|
-|:------:|:-------------:|:-----:|
-|25239|시각 처리 연계|[21774](https://www.acmicpc.net/problem/21774), [22235](https://www.acmicpc.net/problem/22235), [24336](https://www.acmicpc.net/problem/24336)|
-|25240|Single Hash Key Multiple Value|[24339](https://www.acmicpc.net/problem/24339)|
-|25243|event 처리 연계|[22234](https://www.acmicpc.net/problem/22234)|
-|25242|bfs 연계|[22237](https://www.acmicpc.net/problem/22237)|
-|25244|event 처리 연계|[22234](https://www.acmicpc.net/problem/22234)|
-
-## 25238. 가희와 방어율 무시 [바로가기](https://www.acmicpc.net/problem/25238)
-문제를 잘 읽어보시면 결국 수식 정리를 해서 체감 방어율이 100 미만이면 1을 출력하는 것임을 알 수 있습니다.
-조심해야 할 부분은 **실수 오차** 입니다. 이런 문제에서 무슨 실수오차냐 싶을 수도 있겠지만 실제로 아래 경우 때문에 틀리는 경우가 있었습니다.
-```C++
-// (100-b)/100 부분에서 실수 오차가 나는 경우
-a * ((100-b)/100)
-```
-따라서, 이런 문제를 풀 때에는 정수로 처리가 가능하다면 **정수 로 변환**해서 푸는 것이 좋습니다.
-
-## 25239. 가희와 카오스 파풀라투스 [바로가기](https://www.acmicpc.net/problem/25239)
-문제가 길어 보이지만, 사실 중요한 것은 **12시간을 돌릴 수 있느냐**였습니다. 12시간은 720분이므로
-* 720을 주기로 돈다.
-* x분이 경과했을 때 몇 시간이 경과했는지는 **60을 나눠보면** 된다.
-
-이 둘을 파악하시면 됩니다. 
-
-## 25240. 가희와 파일 탐색기 2 [바로가기](https://www.acmicpc.net/problem/25240)
-문제가 정말 길어 보이지만 요구 사항은 복잡하지 않습니다.
-* 특정 유저가 특정 파일에 대해 R, W, X 연산을 수행할 수 있는가?
-
-이를 효율적으로 구현하는 게 목표입니다. 그러면 **유저에 대해 주어지는 정보** 와, **파일에 대해 주어지는 정보** 에 대해 알아야 하는데요.
-
-||유저|파일|
-|:----:|:------:|:-------------:|
-|1|어느 그룹에 속하는지|소유자가 누구인지|
-|2||소유 그룹이 어느 그룹인지|
-|3||권한|
-
-
-이를 토대로 아래와 같은 정보를 빠르게 얻어야 한다는 것을 알 수 있습니다.
-* 파일에 대한 정보를 어떻게 빠르게 얻는가?
-* 유저가 **특정 그룹 x** 에 속했는지 그렇지 않은지에 대한 것을 어떻게 빠르게 얻는가?
-
-전자는 파일 이름을 key로, 파일 메타 정보를 value로 삼는 해시 구조로 접근하면 됩니다. 후자는 어떨까요? 두 가지 방법이 있습니다.
-* 그룹 이름을 Key로 삼는다.
-  * 이 경우, Value는 그룹에 속한 유저들을 저장해야 할 겁니다. 하나의 그룹에 유저는 매우 많이 있을 수 있으므로, Value도 hash 계열을 써야 합니다.
-* 유저 이름을 Key로 삼는다.
-  * 이 때에는 유저가 속한 그룹들을 Value로 삼을 수 있습니다.
-
-여기까지 설계하시면 무난하게 푸실 수 있습니다. 권한 관련해서 조금 지저분해 질 수 있는데, **권한 수는 8개** 밖에 없으므로 하드 코딩 하시면 됩니다.
-
-## 25243. 가희와 중부내륙선 [바로가기](https://www.acmicpc.net/problem/25243)
-문제가 상당히 복잡해 보입니다. 출제 의도는 **lock 메커니즘**의 구현이였습니다. 그렇다면 lock 메커니즘과 문제의 상황을 어떻게 대응시킬 수 있는지가 핵심이 되겠네요.
-|상황|문제에서의 개념|
-|:------:|:-----:|
-|race condition|여러 대의 열차가 **같은 구간에 접근**하려 하는 상황|
-|lock을 걸어야 하는 대상|역과 역 사이의 구간|
-|열차가 구간에 접근|lock을 획득 (acquire)|
-|열차가 역에 도착|lock을 해제 (release)|
-
-이를 어떻게 구현하면 될까요? 구현에 도움이 될 만한 질문을 몇 가지 날려보겠습니다.
-* 역은 어떤 역할을 하나요? 역에 도착한 열차들은 **어떻게 관리**할 건가요?
-* 열차가 구간에 접근하면 **구간에 도착했다는 알람을 어떻게 통지**하는 것이 좋을까요?
-* 구간에 접근하면 notification을 날리겠다. **hh시 mm분**에 도착한다는 알람이 발생하게 하면 어떤가요?
-
-## 25242. 가희와 지하철 [바로가기](https://www.acmicpc.net/problem/25242)
-지하철을 타고 A 구간에서 B 구간을 이동할 때, 환승역을 거치거나, 그렇지 않거나. 모든 경우는 **이 둘 중 하나** 입니다. 여기까지는 쉽게 파악하셨을 겁니다. 그러면 최단 거리로 가는 경로 또한 **이 둘 중 하나** 가 될 겁니다. 질문 3개를 드리겠습니다.
-* 왜 환승역이 **20개 이하** 일까요?
-* **경인선 역곡**역에서 **경인선 부천**역으로 지하철만 타고 가는 제일 빠른 방법은 어떻게 가는 것일까요?
-* **역에 대한 정보**는 어떻게 저장하고 있어야 할까요?
-
-## 25241. 가희와 사직구장 [바로가기](https://www.acmicpc.net/problem/25241) 
-모든 경우의 수를 탐색하면 됩니다. 그리고 **누적합**을 사용해야 한다는 것 또한 매우 쉽게 간파하셨으리라 생각합니다. 상위 n-3명에 대한 정보를 구하기가 까다로웠을 겁니다. 어떻게 해야 할까요? 
-* 3명의 정보가 있다면, 나머지 n-3명에 대한 정보는 **많아야 상위 몇 명의 정보**를 보면 될까요?
-* 해당 솔루션을 떠오르기 까다롭다면, 대체할 수 있는 적합한 **자료구조**가 있을까요?
-
-## 25244. 가희와 영상추천 시스템 [바로가기](https://www.acmicpc.net/problem/25244) 
-문제에서 요구하는 것은 그리 복잡하지 않습니다. 각 영상의 주목도가 변화하는데
-* 카데고리 전체의 주목도
-* 영상 자체의 주목도
-
-이 둘이 변함을 알 수 있습니다. 이들을 어떻게 처리해야 할까요? 
-먼저, 같은 카데고리 안에 있는 영상들을 하나로 묶어봅시다. 그러면
-* **영상** 들의 조회수를 카데고리 별로
-* **카데고리** 에서 **가장 높은** 주목도를 가진 영상
-
-이렇게 묶어낼 수 있습니다. **가장 높은 무언가**만 중요하므로 우선순위 큐를 생각할 수 있습니다.
+|문제 번호|제목|풀러 가기|힌트|난이도|
+|:------:|:-------------:|:-----:|:-----:|:-----:|
+|A|가희와 방어율 무시|[바로가기](https://www.acmicpc.net/problem/25238)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/4/1)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/1.svg"></img> |
+|B|가희와 카오스 파풀라투스|[바로가기](https://www.acmicpc.net/problem/25239)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/4/2)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/8.svg"></img> |
+|C|가희와 파일 탐색기 2|[바로가기](https://www.acmicpc.net/problem/25240)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/4/3)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/13.svg"></img> |
+|D|가희와 중부내륙선|[바로가기](https://www.acmicpc.net/problem/25243)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/4/4)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/15.svg"></img> |
+|E|가희와 지하철|[바로가기](https://www.acmicpc.net/problem/25242)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/4/5)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/16.svg"></img> |
+|F|가희와 사직 구장|[바로가기](https://www.acmicpc.net/problem/25241)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/4/6)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/15.svg"></img> |
+|G|가희와 영상 추천 시스템|[바로가기](https://www.acmicpc.net/problem/25244)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/4/7)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/18.svg"></img> |

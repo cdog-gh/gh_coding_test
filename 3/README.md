@@ -1,49 +1,10 @@
-# 3회 [바로가기](https://www.acmicpc.net/contest/view/755) 
-1월 23일 13시부터 18시 10분까지 3회 코딩테스트가 열렸습니다. 
- 
-* 가희와 무궁화호 [바로가기](https://www.acmicpc.net/problem/24336) 
-* 가희와 탑 [바로가기](https://www.acmicpc.net/problem/24337) 
-* 가희와 쓰레기 놀이 [바로가기](https://www.acmicpc.net/problem/24339) [비하인드](https://codingdog.tistory.com/659) [분석](https://codingdog.tistory.com/660) 
-* 가희와 베개 [바로가기](https://www.acmicpc.net/problem/24338) [분석](https://codingdog.tistory.com/657) 
-* 가희와 btd5 2 [바로가기](https://www.acmicpc.net/problem/24340) 
+## 3회 [바로 가기](https://www.acmicpc.net/contest/view/755)
+1월 23일 13시부터 18시 10분까지 3회 코딩테스트가 열렸습니다.
 
-#### 연계 문제들
-|문제번호|내용|연계문제|
-|:------:|:-------------:|:-----:|
-|24336|시각 파싱 유형 연계|[21774](https://www.acmicpc.net/problem/21774), [22235](https://www.acmicpc.net/problem/21774)|
-|24339|bfs 연계|[22237](https://www.acmicpc.net/problem/22237)|
-|24338|bfs 연계|[22237](https://www.acmicpc.net/problem/22237)|
-|24340|event 처리 연계|[22234](https://www.acmicpc.net/problem/22234)|
-
-## 24336. 가희와 무궁화호 [바로가기](https://www.acmicpc.net/problem/24336)
-표에 주어진 역 정보와, 주어지는 무궁화호 시간표를 가지고 구간 표정속도를 구하는 문제입니다.
-* s1를 출발해서 s2에 도착했는데 **날짜가 바뀌는 경우**
-* **상행**인 경우
-
-이 두 가지만 조심하시면 어렵지 않게 해결하실 수 있습니다.
-
-## 24337. 가희와 탑 [바로가기](https://www.acmicpc.net/24337)
-극단적인 케이스를 만드는 것은 문제를 푸는 데 도움이 되기도 합니다.
-* 극단적인 경우는 어떻게 만들어질까요? **절대 불가능**하다는 걸 증명하면 어떨까요?
-
-## 24339. 가희와 쓰레기 놀이 [바로가기](https://www.acmicpc.net/problem/24339) [비하인드](https://codingdog.tistory.com/659) [분석](https://codingdog.tistory.com/660) 
-문제에서 하라는 대로 다 구현했다가는 느릴 겁니다. 먼저 *obj_id*와 *ref_id*는 1 이상 10억 이하의 정수이므로, **해시나 tree 계열 구조**에 저장하면 될 겁니다. 먼저, 그냥 하라는 대로 구현하기 위해서는 이 점만 조심하면 됩니다.
-* *a*에서 *b*로 연결되는 관계가 여러 개 주어졌을 때 **어떻게 관리**할 건가요?
-
-*ref_id*가 **여러 개인 경우는 없다**는 점에 착안하시면, 저 문제는 쉽게 해결할 수 있습니다. *obj_id*가 어떤 연결 고리를 가지고 있는지 *ref_id* 들을 저장하면 됩니다. 그리고, 중간에 *ref_id*를 삭제하라는 명령도 주어지므로, x번 object로부터 연결되는 *ref_id*들을 tree나 hash 계열 구조로 관리해 주면 됩니다. 그런데, 이 경우, 진짜 하라는 대로 했다가는 정말 느릴 수도 있습니다. 아래 5개의 질문에서 인사이트를 얻으시면 조금 더 빠르게 해결할 수 있는 방법을 떠오르실 수 있게 될 겁니다.
-* 꼭 참조 관계를 삭제해야 하나요? 그렇지 않다고 생각하시면 **어떻게 정보를 관리**하면 되나요?
-* 동시에 **두 개 이상의 연결 관계가 생성**되나요?
-* 동시에 **두 개 이상의 객체가 생성**되나요?
-* 동시에 **두 개 이상의 연결 관계가 삭제**되나요?
-* 동시에 **두 개 이상의 객체가 삭제**되나요?
-
-## 24338. 가희와 베개 [바로가기](https://www.acmicpc.net/problem/24338) [분석](https://codingdog.tistory.com/657)  
-두 질문이 핵심 키입니다.
-* undirected graph에서 component는 왜 구할까요? 언제 쓸모가 있을까요?
-* 경사로의 역할이 무엇인가요?
-
-## 24340. 가희와 btd5 2 [바로가기](https://www.acmicpc.net/problem/24340)  
-사실 풀이에는 언급되지 않았지만, **객체 지향 설계** 를 공부하기 위해 낸 문제입니다. 풀이 말고 생각해 볼만한 주제를 드리겠습니다.
-* 타겟팅 옵션하고 **정렬**은 무슨 관계가 있나요? 그리고 유닛의 특성과 어떤 관계가 있나요?
-* 풍선들은 **이뮨** 속성이 있습니다. 문제에는 공격이 **두 종류**밖에 없는데, 100종류가 추가된다면 어떻게 해야 하나요?
-* 제한이 낮아지고, 유닛 종류가 추가된다고 해 봅시다. 어떻게 설계해야 할까요?
+|문제 번호|제목|풀러 가기|힌트|난이도|
+|:------:|:-------------:|:-----:|:-----:|:-----:|
+|A|가희와 무궁화호|[바로가기](https://www.acmicpc.net/problem/24336)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/3/1)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/10.svg"></img> |
+|B|가희와 탑|[바로가기](https://www.acmicpc.net/problem/24337)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/3/2)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/13.svg"></img> |
+|C|가희와 쓰레기 놀이|[바로가기](https://www.acmicpc.net/problem/24339)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/3/3)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/14.svg"></img> |
+|D|가희와 베개|[바로가기](https://www.acmicpc.net/problem/24338)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/3/4)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/15.svg"></img> |
+|E|가희와 btd5 2|[바로가기](https://www.acmicpc.net/problem/24340)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/3/5)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/19.svg"></img> |

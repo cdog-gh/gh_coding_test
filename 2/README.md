@@ -1,102 +1,13 @@
-# 2회 (패스트캠퍼스 초격차 모의고사 6회) [바로가기](https://www.acmicpc.net/contest/view/658) 
-7월 18일 13시부터 18시까지 2회 코딩테스트가 열렸습니다. 
- 
-* 가희와 파일 탐색기  [바로가기](https://www.acmicpc.net/problem/22232) [분석](https://codingdog.tistory.com/554) 
-* 가희와 키워드  [바로가기](https://www.acmicpc.net/problem/22233) [분석](https://codingdog.tistory.com/669) 
-* 가희와 은행  [바로가기](https://www.acmicpc.net/problem/22234) [분석](https://codingdog.tistory.com/567) 
-* 가희와 btd5  [바로가기](https://www.acmicpc.net/problem/22238) [분석](https://codingdog.tistory.com/620)
-* 가희와 수인 분당선 1  [바로가기](https://www.acmicpc.net/problem/22235) [분석](https://codingdog.tistory.com/597) [다른풀이](https://boomrabbit.tistory.com/170) 
-* 가희와 비행기  [바로가기](https://www.acmicpc.net/problem/22236) [분석](https://codingdog.tistory.com/653) 
-* 가희와 거북이 인형  [바로가기](https://www.acmicpc.net/problem/22237) [분석](https://codingdog.tistory.com/564) [분석2](https://codingdog.tistory.com/590) 
-* 가희와 읽기 쓰기 놀이 2  [바로가기](https://www.acmicpc.net/problem/22239) 
+## 2회 [바로 가기](https://www.acmicpc.net/contest/view/658)
+7월 18일 13시부터 18시까지 2회 코딩테스트가 열렸습니다.
 
-#### 연계 문제들
-|문제번호|내용|연계문제|
-|:------:|:-------------:|:-----:|
-|22234|스케쥴링 알고리즘 구현 연계|21773|
-|22235|시각 파싱 유형 연계|21774|
-|22237|상대 속도와 절대 속도 개념 연계|21773|
-|22232|string 파싱 및 equal, range query 간접 연계|21771|
-|22233|string 파싱 연계|21772|
-
-## 22232. 가희와 파일탐색기 [바로가기](https://www.acmicpc.net/problem/22232) [분석](https://codingdog.tistory.com/554)  
-간단한 정렬문제입니다. 잘못 구현할 수 있는 포인트는 아래와 같습니다.
-* compare(a, b)가 True 이면서 **compare(b, a)가 True가 되게 리턴**하는 경우  
-* string을 long long으로 압축할 때, 10자 미만인 string에 대한 처리
-
-*equal*이 아닌 상대 비교 처리가 필요하므로, 2번째의 경우, 10자 미만일 때, 나머지 부분을 *padding* 처리하시면 됩니다. 
-
-## 22233. 가희와 키워드 [바로가기](https://www.acmicpc.net/problem/22233) [분석](https://codingdog.tistory.com/669) 
-반대로 이것은 키워드의 *equal*이 중요하므로 *padding* 처리를 하지 않고 압축하셔도 됩니다. 이 문제는 아래를 주의하셔야 합니다.
-* 나올 수 있는 *keyword* 수가 **최대 220만**개여서 set, map을 이용하면 시간초과가 난다.
-* 문자열 정렬을 할 때, 두 key의 *compare* 시간이 오래 걸릴 수도 있다.
-
-
-## 22234. 가희와 은행 [바로가기](https://www.acmicpc.net/problem/22234) [분석](https://codingdog.tistory.com/567)  
-잘 읽어보면 *Round Robin*과 비슷함을 알 수 있습니다. 출력해야 하는 시간이 **20만 이하**이니, 이 부분만 이벤트 배열에 넣으면 됩니다.
-* N+M명의 사람들을 sort() 메서드로 정렬하는 경우
-  * sort 메서드는 **stable 하지 않으므로** 조심하셔야 합니다. 비슷한 개념의 문제 중에는, [2910번](https://www.acmicpc.net/problem/2910)이 있습니다.
-  * 이는 맨 처음에 온 사람들은 **입력 받은 순서대로 줄을 서야 하기 때문**입니다.
-* 1초마다 처리하는 게 아니라, 특정 시간 초마다 처리하는 경우 구현이 복잡해 질 수 있음.
-* 업무를 처리하는 데 필요한 시간이 **W보다 작은 경우**
-
-를 주의하시면 됩니다.
-
-## 22238. 가희와 btd5 [바로가기](https://www.acmicpc.net/problem/22238) [분석](https://codingdog.tistory.com/620)
-풍선들이 있는 위치를 잘 읽어야 합니다. 공격할 때 풍선들을 못 맞출 수도 있습니다. 그런데, 이것 말고도 매력적인 함정이 몇 가지 있었습니다.
-* double, float 등으로 처리할 때 **실수 오차**
-* (x, 0), (0, x) 방향으로 공격하는 데이터 (단, **x는 0이 아닌 정수**)
-* 음수에 대한 처리
-
-double이나 float와 같은 실수 데이터는 정밀도를 신경써야 합니다. 실수 오차에 대한 데이터는 [여기](https://github.com/cdog-gh/gh_coding_test/blob/main/2/4/double_att.in)에 있습니다.  
-실제로 이 함정에만 걸려서, *ccw* 알고리즘으로 선회하신 분도 계셨습니다.
-
-## 22235. 가희와 수인분당선 [바로가기](https://www.acmicpc.net/problem/22235) [분석](https://codingdog.tistory.com/597)
-쉽지 않은 문제입니다만, 아래 두 가지 질문에 잘 생각해 보시면 난이도가 다소 쉬워집니다.
-* 왕십리발 오이도행 열차를 죽전역에서 탑승했다고 했을 때
-  * 죽전역에서 열차를 내린 다음에 바로 타나, 해당 열차를 그대로 타고 가나 별 차이가 없습니다.
-  * 그러면 종착역이 되는 죽전, 고색, 오이도, 인천에서 **열차에 내리는 action** 을 취하면 되지 않을까요?
-* 역 a에서 역 b으로 가장 빠르게 가려면, b역 방향으로 가는 **가장 빨리 오는 열차**를 타면 됩니다.
-
-## 22236. 가희와 비행기 [바로가기](https://www.acmicpc.net/problem/22236) [분석](https://codingdog.tistory.com/653)
-여러 가지 방법으로 풀 수 있는 문제입니다. 이 중 몇 가지를 소개해 드리겠습니다.
-* 카탈랑 수
-  * 김포공항에서 김해 공항까지 수평 거리가 d라고 하겠습니다.
-  * 이 경우, (1, 1)로부터 (d-1, 1)까지 이동할 때, **고도가 1 미만** 로 떨어지면 안 됩니다.
-  * 올라가는 것을 '('로, 내려가는 것을 ')'로 표시하면, 길이 d-2인 문자열이 올바른 괄호 문자열이여야 합니다.
-  * 괄호 문자열은 카탈랑 수로 구할 수 있음이 알려져 있네요? C[d-2]를 구하면 됩니다.
-* dp
-  * d가 작기 때문에 공간 복잡도가 O(d^2)인 dp를 사용해도 됩니다.
-  * (x, y) 지점으로 오는 가짓수 = (x-1, y-1)로 오는 가짓수 + (x-1, y+1)로 오는 가짓수임을 이용합니다.
-  * 이 때, **김해 공항과 김포 공항이 아닌 지역에 착륙**하는 경우는 0임을 주의하시면 됩니다.
-
-## 26080. 가희와 하카타 [바로가기](https://www.acmicpc.net/problem/26080)  
-2회에 내려고 했던 버전이였습니다만 열화판을 냈습니다. 이 버전은 _d_ 의 제한이 늘어났다는 것이 포인트입니다.
-일단 구하고자 하는 것 부터 봅시다. _d_ 가 6이라고 해 봅시다. 사전순 _k_ 번째는 결국
-* dddk... 꼴의 가짓수
-* ddk... 꼴의 가짓수
-
-를 적당히 잘 구해가면서 **누적** 시키면 됨을 알 수 있습니다. 결국 기준 좌표로부터 목적지까지 가는 가짓수를 저장하고 있으면 됩니다. BUT _d_ 가 큽니다.
-* (x, x)에서 (d, 0) 까지 갈 수 있는 경우의 수는 얼마나 될까요? _d_ 가 커지면?
-* 카드가 1만개 있을 때, 1만개 중에 7개의 카드를 뽑는 가짓수는 몇 가지일까요?
-* 카드가 2만개 있을 때, 2만개 중에 7개의 카드를 뽑는 가짓수는 몇 가지일까요?
-
-1번째 질문을 잘 보는 것이 핵심이라고 할 수 있습니다.
-  
-
-## 22237. 가희와 거북이 인형 [바로가기](https://www.acmicpc.net/problem/22237) [분석](https://codingdog.tistory.com/590) 
-넓은 맵 크기, 거북이 컴포넌트에 비해 매우 **적은 장애물** 개수가 키 포인트입니다. 거북이의 맨 위, 왼쪽 꼭대기를 기준 좌표로 삼아봅시다. 
-그러면, 해당 위치가 거북이가 있을 수 있는 위치인지, 그렇지 않은 위치인지 파악해야 하는 문제로 환원됨을 알 수 있습니다.
-* 거북이 전체가 1칸 
-  * 왼쪽으로 이동한 것 = 장애물 전체가 1칸 ?쪽으로 이동한 것
-  * 오른쪽으로 이동한 것 = 장애물 전체가 1칸 ?쪽으로 이동한 것
-  * 위로 이동한 것 = 장애물 전체가 1칸 ?쪽으로 이동한 것
-  * 아래로 이동한 것 = 장애물 전체가 1칸 ?쪽으롤 이동한 것
-* 고려해야 하는 요소는 **집**과 **장애물** 외에 무엇이 있을까요?
-
-## 22239. 가희와 읽기 쓰기 놀이 2 [바로가기](https://www.acmicpc.net/problem/22239)
-문제가 상당히 어려워 보입니다. 이 조건을 독해하는 것이 핵심입니다.
-* 결과 리스트에 **2번 이상 나오는 수가 나오는 횟수를 합하면 6 이하** 이다.
-  * 단순히 2번 이상 나오는 수가 적힌 카드들을 섞어도 **6! = 720 이하**
-  
-각 경우 당 시뮬레이션은 O(n)에 할 수 있습니다. 따라서, O(720n)만에 수행할 수 있습니다.
+|문제 번호|제목|풀러 가기|힌트|난이도|
+|:------:|:-------------:|:-----:|:-----:|:-----:|
+|A|가희와 파일 탐색기|[바로가기](https://www.acmicpc.net/problem/22232)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/2/1)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/8.svg"></img> |
+|B|가희와 키워드|[바로가기](https://www.acmicpc.net/problem/22233)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/2/2)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/9.svg"></img> |
+|C|가희와 은행|[바로가기](https://www.acmicpc.net/problem/22234)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/2/3)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/11.svg"></img> |
+|D|가희와 btd5|[바로가기](https://www.acmicpc.net/problem/22238)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/2/4)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/11.svg"></img> |
+|E|가희와 수인 분당선 1|[바로가기](https://www.acmicpc.net/problem/22235)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/2/5)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/14.svg"></img> |
+|F|가희와 비행기|[바로가기](https://www.acmicpc.net/problem/22236)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/2/6)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/12.svg"></img> |
+|G|가희와 거북이 인형|[바로가기](https://www.acmicpc.net/problem/22237)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/2/7)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/16.svg"></img> |
+|H|가희와 읽기 쓰기 놀이 2|[바로가기](https://www.acmicpc.net/problem/22239)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/2/8)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/15.svg"></img> |
