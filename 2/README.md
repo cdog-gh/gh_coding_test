@@ -11,4 +11,5 @@
 |F|가희와 비행기|[바로가기](https://www.acmicpc.net/problem/22236)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/2/6)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/12.svg"></img> |
 |G|가희와 거북이 인형|[바로가기](https://www.acmicpc.net/problem/22237)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/2/7)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/16.svg"></img> |
 |H|가희와 읽기 쓰기 놀이 2|[바로가기](https://www.acmicpc.net/problem/22239)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/2/8)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/15.svg"></img> |
-마지막 업데이트 날짜 : 2023-03-18 13:48:28.212795Z
+
+마지막 업데이트 날짜 : 2023-03-18 14:05:55.595898Z
