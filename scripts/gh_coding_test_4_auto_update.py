@@ -36,3 +36,7 @@ with open("4/README.md", "w", encoding="utf8") as f:
         hint_link = f"""https://github.com/cdog-gh/gh_coding_test/tree/main/4/{i+1}"""
         img_script = f"""<img height="25px" width="25px" src="https://static.solved.ac/tier_small/{data["lv"]}.svg"></img>"""
         f.write(f"""|{ch}|{problem_title}|[바로가기]({problem_link})|[힌트]({hint_link})| {img_script} |\n""")
+
+    from datetime import datetime
+    from datetime import timezone
+    f.write(f"마지막 업데이트 날짜 : {str(datetime.now(timezone.utc)).replace('+00:00', 'Z')}")
