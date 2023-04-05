@@ -26,6 +26,7 @@ jobs:
          python scripts/gh_coding_test_2_auto_update.py --all
          python scripts/gh_coding_test_3_auto_update.py --all
          python scripts/gh_coding_test_4_auto_update.py --all
+         python scripts/gh_coding_test_5_auto_update.py --all
     - name: Commits
       run: |
         git config --local user.email "${{ secrets.USER_EMAIL }}"
