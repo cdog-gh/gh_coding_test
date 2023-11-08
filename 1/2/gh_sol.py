@@ -7,8 +7,8 @@ dy = [0, -1, 0, 1]
 def func(start_x, start_y, r, c, q, ma):
     cx = start_x
     cy = start_y
-    seti = {}
-    ans = 0
+    visit = {}
+    temp = 0
     for op in q:
         cx = cx + dx[op]
         cy = cy + dy[op]
@@ -16,21 +16,21 @@ def func(start_x, start_y, r, c, q, ma):
             return 0
         if ma[cx][cy] == '#':
             return 0
-        seti[(cx, cy)] = 1
-    for cx, cy in seti:
+        visit[(cx, cy)] = 1
+    for cx, cy in visit:
         if ma[cx][cy] == 'S':
-            ans = ans + 1
-    return ans
+            temp += 1
+    return temp
 
 
 R, C, T = map(int, input().split())
-mmx = 0
+sx = -1
+sy = -1
 for i in range(R):
     st.append(input())
     if st[i].find('G') != -1:
         sx, sy = i, st[i].find('G')
+ans = 0
 for query in itertools.product([0, 1, 2, 3], repeat=T):
-    r = func(sx, sy, R, C, query, st)
-    if r > mmx:
-        mmx = r
-print(mmx)
+    ans = max(ans, func(sx, sy, R, C, query, st))
+print(ans)

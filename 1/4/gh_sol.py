@@ -1,12 +1,5 @@
-import time
 import bisect
 import sys
-
-
-# strptime is too low
-# def str_to_int(tar):
-#    from_1970 = time.strptime(tar, '%Y-%m-%d %H:%M:%S')
-#    return int(time.mktime(from_1970))
 
 
 def calc(x1, y1, y2, nx):
@@ -27,10 +20,13 @@ for i in range(n):
 for i in range(Q):
     it = sys.stdin.readline().split('#')
     lv = int(it[2])
+
+    # time 대소 비교만 하는 것이므로, YYYY-MM-DD hh:mm:ss 꼴로 parsing해도 된다.
     qu.append((str(it[0]), str(it[1]), lv))
     time_set.append(str(it[0]))
     time_set.append(str(it[1]))
 time_set = sorted(time_set)
+
 for i in range(n):
     time, lv = ev[i]
     arr[lv][bisect.bisect_left(time_set, time)] += 1
