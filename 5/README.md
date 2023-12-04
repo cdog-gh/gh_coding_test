@@ -13,4 +13,4 @@
 |H|가희와 코드|[바로가기](https://www.acmicpc.net/problem/27887)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/5/8)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/17.svg"></img> |
 |I|가희와 서울 지하철 1호선|[바로가기](https://www.acmicpc.net/problem/27886)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/5/9)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/18.svg"></img> |
 
-마지막 업데이트 날짜 : 2023-12-03 00:04:59.879272Z
+마지막 업데이트 날짜 : 2023-12-04 00:05:02.810643Z
