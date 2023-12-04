@@ -1,5 +1,5 @@
 ## 4회 [바로 가기](https://www.acmicpc.net/contest/view/819)
-6월 6일 13시부터 18시 10분까지 4회 코딩테스트가 열렸습니다.
+6월 6일 13시부터 18시 00분까지 4회 코딩테스트가 열렸습니다.
 
 |문제 번호|제목|풀러 가기|힌트|난이도|
 |:------:|:-------------:|:-----:|:-----:|:-----:|
@@ -11,4 +11,4 @@
 |F|가희와 사직 구장|[바로가기](https://www.acmicpc.net/problem/25241)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/4/6)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/15.svg"></img> |
 |G|가희와 영상 추천 시스템|[바로가기](https://www.acmicpc.net/problem/25244)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/4/7)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/18.svg"></img> |
 
-마지막 업데이트 날짜 : 2023-12-04 00:05:02.810533Z
+마지막 업데이트 날짜 : 2023-12-04 18:10:27.764818Z
