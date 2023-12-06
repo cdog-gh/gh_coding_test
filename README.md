@@ -8,4 +8,5 @@
 |   3   |[바로가기](https://www.acmicpc.net/contest/view/755)| [자료](https://github.com/cdog-gh/gh_coding_test/tree/main/3) |🤮|
 |   4   |[바로가기](https://www.acmicpc.net/contest/view/819)| [자료](https://github.com/cdog-gh/gh_coding_test/tree/main/4) |😠|
 |   5   |[바로가기](https://www.acmicpc.net/contest/view/946)| [자료](https://github.com/cdog-gh/gh_coding_test/tree/main/5) |😠|
+|   6   |[바로가기](https://www.acmicpc.net/contest/view/1201)| [자료](https://github.com/cdog-gh/gh_coding_test/tree/main/6) |😆|
 
