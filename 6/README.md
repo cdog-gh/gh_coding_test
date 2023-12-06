@@ -10,9 +10,9 @@
 |E|gahui and sousenkyo 4|[바로가기](https://www.acmicpc.net/problem/30796)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/6/5)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/7.svg"></img> |
 |F|가희와 클럽 오디션 2|[바로가기](https://www.acmicpc.net/problem/30801)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/6/6)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/11.svg"></img> |
 |G|가희와 여행가요|[바로가기](https://www.acmicpc.net/problem/30797)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/6/7)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/12.svg"></img> |
-|H|가희와 터널|[바로가기](https://www.acmicpc.net/problem/30799)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/6/8)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/15.svg"></img> |
+|H|가희와 터널|[바로가기](https://www.acmicpc.net/problem/30799)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/6/8)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/14.svg"></img> |
 |I|가희와 총선거 5|[바로가기](https://www.acmicpc.net/problem/30795)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/6/9)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/13.svg"></img> |
 |J|gahui and sousenkyo 6|[바로가기](https://www.acmicpc.net/problem/30798)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/6/10)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/16.svg"></img> |
 |K|가희와 집|[바로가기](https://www.acmicpc.net/problem/30800)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/6/11)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/19.svg"></img> |
 
-마지막 업데이트 날짜 : 2023-12-05 12:07:00.461568Z
+마지막 업데이트 날짜 : 2023-12-06 00:05:08.024580Z
