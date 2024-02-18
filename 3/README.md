@@ -9,4 +9,4 @@
 |D|가희와 베개|[바로가기](https://www.acmicpc.net/problem/24338)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/3/4)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/15.svg"></img> |
 |E|가희와 btd5 2|[바로가기](https://www.acmicpc.net/problem/24340)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/3/5)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/19.svg"></img> |
 
-마지막 업데이트 날짜 : 2024-02-17 00:04:28.714153Z
+마지막 업데이트 날짜 : 2024-02-18 00:05:09.025807Z
