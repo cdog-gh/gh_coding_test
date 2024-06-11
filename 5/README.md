@@ -5,7 +5,7 @@
 |:------:|:-------------:|:-----:|:-----:|:-----:|
 |A|Gahui and Soongsil University station|[바로가기](https://www.acmicpc.net/problem/27880)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/5/1)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/2.svg"></img> |
 |B|가희와 열리지 않는 건널목|[바로가기](https://www.acmicpc.net/problem/27885)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/5/2)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/5.svg"></img> |
-|C|가희와 노선 건설 놀이|[바로가기](https://www.acmicpc.net/problem/27883)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/5/3)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/9.svg"></img> |
+|C|가희와 노선 건설 놀이|[바로가기](https://www.acmicpc.net/problem/27883)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/5/3)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/10.svg"></img> |
 |D|가희와 서울 지하철 3호선|[바로가기](https://www.acmicpc.net/problem/27884)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/5/4)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/10.svg"></img> |
 |E|Gahui and ILGAM lake|[바로가기](https://www.acmicpc.net/problem/27881)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/5/5)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/12.svg"></img> |
 |F|가희와 지하철역 저장 시스템 1|[바로가기](https://www.acmicpc.net/problem/27888)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/5/6)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/14.svg"></img> |
@@ -13,4 +13,4 @@
 |H|가희와 코드|[바로가기](https://www.acmicpc.net/problem/27887)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/5/8)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/17.svg"></img> |
 |I|가희와 서울 지하철 1호선|[바로가기](https://www.acmicpc.net/problem/27886)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/5/9)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/18.svg"></img> |
 
-마지막 업데이트 날짜 : 2024-06-10 00:05:22.306011Z
+마지막 업데이트 날짜 : 2024-06-11 00:05:02.969486Z
