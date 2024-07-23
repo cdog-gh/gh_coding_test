@@ -9,7 +9,7 @@
 |D|가희와 로그 파일|[바로가기](https://www.acmicpc.net/problem/21774)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/1/4)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/13.svg"></img> |
 |E|가희와 자원 놀이|[바로가기](https://www.acmicpc.net/problem/21775)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/1/5)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/12.svg"></img> |
 |F|가희와 읽기 쓰기 놀이|[바로가기](https://www.acmicpc.net/problem/21776)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/1/6)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/13.svg"></img> |
-|G|리버스 가희와 프로세스 1|[바로가기](https://www.acmicpc.net/problem/21777)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/1/7)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/15.svg"></img> |
+|G|리버스 가희와 프로세스 1|[바로가기](https://www.acmicpc.net/problem/21777)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/1/7)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/16.svg"></img> |
 |H|가희와 프로세스 2|[바로가기](https://www.acmicpc.net/problem/21778)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/1/8)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/16.svg"></img> |
 
-마지막 업데이트 날짜 : 2024-07-22 00:05:25.785751Z
+마지막 업데이트 날짜 : 2024-07-23 00:05:24.958322Z
