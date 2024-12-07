@@ -19,6 +19,9 @@ gh_5_data = build_gh_problem(gh_5_problem)
 gh_6_problem = [30791, 30792, 30793, 30794, 30796, 30801, 30797, 30799, 30795, 30798, 30800]
 gh_6_data = build_gh_problem(gh_6_problem)
 
+gh_7_problem = [32775, 32776, 32777, 32778, 32779, 32780, 32786, 32781, 32783, 32784, 32785, 32782]
+gh_7_data = build_gh_problem(gh_7_problem)
+
 
 with open("1/README.md", "w", encoding="utf8") as f:
     f.write(f"""## 1회 [바로 가기](https://www.acmicpc.net/contest/view/644)\n""")
@@ -122,6 +125,25 @@ with open("6/README.md", "w", encoding="utf8") as f:
     f.write(f"""|문제 번호|제목|풀러 가기|힌트|난이도|\n""")
     f.write(f"""|:------:|:-------------:|:-----:|:-----:|:-----:|\n""")
     for i, data in enumerate(gh_6_data):
+        ch = chr(ord('A') + i)
+        problem_title = data["title"]
+        problem_link = f"""https://www.acmicpc.net/problem/{data["problemNo"]}"""
+        hint_link = f"""https://github.com/cdog-gh/gh_coding_test/tree/main/6/{i+1:02d}"""
+        img_script = f"""<img height="25px" width="25px" src="https://static.solved.ac/tier_small/{data["lv"]}.svg"></img>"""
+        f.write(f"""|{ch}|{problem_title}|[바로가기]({problem_link})|[힌트]({hint_link})| {img_script} |\n""")
+
+    from datetime import datetime
+    from datetime import timezone
+    f.write(f"\n마지막 업데이트 날짜 : {str(datetime.now(timezone.utc)).replace('+00:00', 'Z')}")
+
+
+with open("7/README.md", "w", encoding="utf8") as f:
+    f.write(f"""## 7회 [바로 가기](https://www.acmicpc.net/contest/view/1415)\n""")
+    f.write(f"""11월 30일 19시부터 23시 00분까지 6회 코딩테스트가 열렸습니다.\n""")
+    f.write(f"""\n""")
+    f.write(f"""|문제 번호|제목|풀러 가기|힌트|난이도|\n""")
+    f.write(f"""|:------:|:-------------:|:-----:|:-----:|:-----:|\n""")
+    for i, data in enumerate(gh_7_data):
         ch = chr(ord('A') + i)
         problem_title = data["title"]
         problem_link = f"""https://www.acmicpc.net/problem/{data["problemNo"]}"""
