@@ -139,7 +139,7 @@ with open("6/README.md", "w", encoding="utf8") as f:
 
 with open("7/README.md", "w", encoding="utf8") as f:
     f.write(f"""## 7회 [바로 가기](https://www.acmicpc.net/contest/view/1415)\n""")
-    f.write(f"""11월 30일 19시부터 23시 00분까지 6회 코딩테스트가 열렸습니다.\n""")
+    f.write(f"""11월 30일 19시부터 23시 00분까지 7회 코딩테스트가 열렸습니다.\n""")
     f.write(f"""\n""")
     f.write(f"""|문제 번호|제목|풀러 가기|힌트|난이도|\n""")
     f.write(f"""|:------:|:-------------:|:-----:|:-----:|:-----:|\n""")
@@ -147,7 +147,7 @@ with open("7/README.md", "w", encoding="utf8") as f:
         ch = chr(ord('A') + i)
         problem_title = data["title"]
         problem_link = f"""https://www.acmicpc.net/problem/{data["problemNo"]}"""
-        hint_link = f"""https://github.com/cdog-gh/gh_coding_test/tree/main/6/{i+1:02d}"""
+        hint_link = f"""https://github.com/cdog-gh/gh_coding_test/tree/main/7/{i+1:02d}"""
         img_script = f"""<img height="25px" width="25px" src="https://static.solved.ac/tier_small/{data["lv"]}.svg"></img>"""
         f.write(f"""|{ch}|{problem_title}|[바로가기]({problem_link})|[힌트]({hint_link})| {img_script} |\n""")
 
