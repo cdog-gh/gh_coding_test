@@ -1,4 +1,4 @@
-## 6회 [바로 가기](https://www.acmicpc.net/contest/view/946)
+## 6회 [바로 가기](https://www.acmicpc.net/contest/view/1201)
 12월 3일 19시부터 23시 00분까지 6회 코딩테스트가 열렸습니다.
 
 |문제 번호|제목|풀러 가기|힌트|난이도|
