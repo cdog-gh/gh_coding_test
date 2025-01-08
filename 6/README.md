@@ -15,4 +15,4 @@
 |J|gahui and sousenkyo 6|[바로가기](https://www.acmicpc.net/problem/30798)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/6/10)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/16.svg"></img> |
 |K|가희와 집|[바로가기](https://www.acmicpc.net/problem/30800)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/6/11)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/19.svg"></img> |
 
-마지막 업데이트 날짜 : 2025-01-07 00:06:33.512962Z
+마지막 업데이트 날짜 : 2025-01-08 00:06:13.691722Z
