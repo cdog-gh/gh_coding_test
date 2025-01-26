@@ -12,8 +12,8 @@
 |G|gahui and sousenkyo 7|[바로가기](https://www.acmicpc.net/problem/32786)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/7/07)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/13.svg"></img> |
 |H|타카하시의 카드 게임|[바로가기](https://www.acmicpc.net/problem/32781)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/7/08)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/13.svg"></img> |
 |I|가희와 전기 요금 2|[바로가기](https://www.acmicpc.net/problem/32783)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/7/09)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/12.svg"></img> |
-|J|가희와 신칸센 1|[바로가기](https://www.acmicpc.net/problem/32784)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/7/10)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/18.svg"></img> |
+|J|가희와 신칸센 1|[바로가기](https://www.acmicpc.net/problem/32784)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/7/10)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/19.svg"></img> |
 |K|腹ペコのムト|[바로가기](https://www.acmicpc.net/problem/32785)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/7/11)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/16.svg"></img> |
 |L|가희와 음악|[바로가기](https://www.acmicpc.net/problem/32782)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/7/12)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/14.svg"></img> |
 
-마지막 업데이트 날짜 : 2025-01-25 00:05:51.599129Z
+마지막 업데이트 날짜 : 2025-01-26 00:06:24.515981Z
