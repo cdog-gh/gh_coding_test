@@ -16,4 +16,4 @@
 |K|腹ペコのムト|[바로가기](https://www.acmicpc.net/problem/32785)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/7/11)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/16.svg"></img> |
 |L|가희와 음악|[바로가기](https://www.acmicpc.net/problem/32782)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/7/12)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/14.svg"></img> |
 
-마지막 업데이트 날짜 : 2025-02-01 00:06:26.891814Z
+마지막 업데이트 날짜 : 2025-02-02 00:06:30.196929Z
