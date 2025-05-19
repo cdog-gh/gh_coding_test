@@ -9,6 +9,6 @@
 |D|가희와 중부내륙선|[바로가기](https://www.acmicpc.net/problem/25243)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/4/4)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/16.svg"></img> |
 |E|가희와 지하철|[바로가기](https://www.acmicpc.net/problem/25242)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/4/5)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/16.svg"></img> |
 |F|가희와 사직 구장|[바로가기](https://www.acmicpc.net/problem/25241)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/4/6)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/15.svg"></img> |
-|G|가희와 영상 추천 시스템|[바로가기](https://www.acmicpc.net/problem/25244)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/4/7)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/18.svg"></img> |
+|G|가희와 영상 추천 시스템|[바로가기](https://www.acmicpc.net/problem/25244)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/4/7)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/19.svg"></img> |
 
-마지막 업데이트 날짜 : 2025-05-18 00:07:39.638347Z
+마지막 업데이트 날짜 : 2025-05-19 00:07:30.902964Z
