@@ -21,7 +21,7 @@
 <summary>🔑힌트 4</summary>
 힌트 3의 기능들을 어떻게 구현할까요?
 <ul>
-  <li> python orderedDict [<a href="https://codingdog.pe.kr/2024/01/28/python-lru-ordereddict-%ec%9d%b4%ec%9a%a9%ed%95%b4%ec%84%9c-%ea%b5%ac%ed%98%84%ed%95%b4-%eb%b4%85%ec%8b%9c%eb%8b%a4/">link</a>] 이나, java LinkedHashMap 등을 이용하면 되겠군요. <br>
+  <li> python orderedDict이나, java LinkedHashMap 등을 이용하면 되겠군요. <br>
   <li> 노드 수가 많아야 300이네요? 그러면 floyd도 이용할 수 있겠군요. <br>
   <li> 전처리 된 dist 배열을 가지고, 제일 가까운 캐시 노드 c를 전처리 해야 겠군요. <br>
 </ul>
@@ -30,8 +30,8 @@
 <summary>💡생각해 볼 만한 것 1</summary>
 만약에 java LinkedHashMap이나 python orderedDict를 사용하지 못하면 어떻게 구현하면 될까요? 
 <ul>
-  <li> hashmap + queue [<a href="https://codingdog.pe.kr/2024/01/12/lru-%ec%95%8c%ea%b3%a0%eb%a6%ac%ec%a6%98-monotone-queue-%eb%a1%9c-%ea%b5%ac%ed%98%84%ed%95%b4-%eb%b4%85%ec%8b%9c%eb%8b%a4/">link</a>] <br>
-  <li> hashmap + linkedlist [<a href="https://codingdog.pe.kr/2024/01/14/java-linkedhashmap-%ec%9b%90%eb%a6%ac%eb%a5%bc-%ec%95%8c%ec%95%84%eb%b3%b4%ea%b3%a0-hashmap%ec%9c%bc%eb%a1%9c-%ea%b5%ac%ed%98%84%ed%95%b4-%eb%b4%85%ec%8b%9c%eb%8b%a4/">link</a>]<br>
+  <li> hashmap + queue <br>
+  <li> hashmap + linkedlist <br>
 </ul>
 두 번째 방법으로 구할 때 시간 복잡도는 어떻게 될까요?
 </details>

@@ -1,4 +1,4 @@
-# 🔒 가희와 클럽 오디션 2 [풀이](https://codingdog.pe.kr/2024/06/05/%ed%95%98%eb%93%9c-%ec%bd%94%eb%94%a9%ec%9c%bc%eb%a1%9c-%ea%b0%80%ed%9d%ac%ec%99%80-%ed%81%b4%eb%9f%bd-%ec%98%a4%eb%94%94%ec%85%98-2-%eb%ac%b8%ec%a0%9c%eb%a5%bc-%ed%92%80%ec%96%b4%eb%b4%85%ec%8b%9c/)
+# 🔒 가희와 클럽 오디션 2
 구현, 파싱
 <details>
 <summary>🔑힌트 1</summary>
