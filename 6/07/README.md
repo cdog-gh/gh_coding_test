@@ -18,7 +18,7 @@
 크루스칼 알고리즘의 유니온 파인드를 구현할 때 아래 두 가지를 많이 이용합니다.
 <ul>
   <li> by path compression <br>
-  <li> by rank [<a href="https://codingdog.pe.kr/2023/12/21/union-find-by-rank-%eb%a1%9c-find-%ed%95%a8%ec%88%98%ea%b0%80-%eb%b9%a0%eb%a5%b4%ea%b2%8c-%eb%8f%99%ec%9e%91%ed%95%98%ea%b2%8c-%ed%95%b4-%eb%b4%85%ec%8b%9c%eb%8b%a4/">link</a>]<br>
+  <li> by rank <br>
 </ul>
 두 번째 방법으로 구할 때 시간 복잡도는 어떻게 될까요?
 </details>
