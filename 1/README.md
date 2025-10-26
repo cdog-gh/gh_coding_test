@@ -12,4 +12,4 @@
 |G|리버스 가희와 프로세스 1|[바로가기](https://www.acmicpc.net/problem/21777)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/1/7)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/16.svg"></img> |
 |H|가희와 프로세스 2|[바로가기](https://www.acmicpc.net/problem/21778)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/1/8)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/16.svg"></img> |
 
-마지막 업데이트 날짜 : 2025-10-25 00:06:49.036522Z
+마지막 업데이트 날짜 : 2025-10-26 00:07:20.877426Z
