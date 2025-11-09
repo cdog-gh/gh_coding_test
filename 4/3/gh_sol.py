@@ -1,17 +1,17 @@
 import sys
-input = sys.stdin.readline
 
+input = sys.stdin.readline
 
 u, f = map(int, input().split())
 grp = dict()
 fi = dict()
-pn = {'R':4, 'W':2, 'X':1}
+pn = {'R': 4, 'W': 2, 'X': 1}
 
 
-def add_group(user, group):
-    if group not in grp:
-        grp[group] = dict()
-    grp[group][user] = 1
+def add_group(user, group_key):
+    if group_key not in grp:
+        grp[group_key] = dict()
+    grp[group_key][user] = 1
 
 
 for i in range(u):
@@ -25,7 +25,6 @@ for i in range(u):
 for i in range(f):
     fn, pf, o, og = map(str, input().strip().split())
     fi[fn] = [pf, o, og]
-    grp[og]
 
 ans = []
 q = int(input())
@@ -35,12 +34,12 @@ for i in range(q):
     f_data = fi[fn]
     f_owner = f_data[1]
     f_group = f_data[2]
-    f_permi = f_data[0]
-    
-    p0 = int(f_permi[0])
-    p1 = int(f_permi[1])
-    p2 = int(f_permi[2])
-    
+    f_perm = f_data[0]
+
+    p0 = int(f_perm[0])
+    p1 = int(f_perm[1])
+    p2 = int(f_perm[2])
+
     if un == f_owner:
         flag = ((p0 & pn[o]) == pn[o])
     elif un in grp[f_group]:
