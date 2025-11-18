@@ -13,7 +13,7 @@
 |H|타카하시의 기차 퍼즐 놀이 1|[바로가기](https://www.acmicpc.net/problem/34672)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/8/08)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/11.svg"></img> |
 |I|한국의 철도|[바로가기](https://www.acmicpc.net/problem/34673)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/8/09)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/13.svg"></img> |
 |J|타카하시의 기차 퍼즐 놀이 2|[바로가기](https://www.acmicpc.net/problem/34674)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/8/10)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/19.svg"></img> |
-|K|가희와 노선 건설 놀이 3|[바로가기](https://www.acmicpc.net/problem/34675)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/8/11)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/15.svg"></img> |
+|K|가희와 노선 건설 놀이 3|[바로가기](https://www.acmicpc.net/problem/34675)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/8/11)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/16.svg"></img> |
 |L|가희와 신칸센 2|[바로가기](https://www.acmicpc.net/problem/34676)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/8/12)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/17.svg"></img> |
 
-마지막 업데이트 날짜 : 2025-11-17 00:07:03.935703Z
+마지막 업데이트 날짜 : 2025-11-18 00:07:26.462486Z
