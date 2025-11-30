@@ -1,5 +1,5 @@
 ## 1회 [바로 가기](https://www.acmicpc.net/contest/view/644)
-5월 23일 13시부터 18시까지 1회 코딩테스트가 열렸습니다.
+2021년 05월 23일 13시부터 18시까지 1회 코딩테스트가 열렸습니다.
 
 |문제 번호|제목|풀러 가기|힌트|난이도|
 |:------:|:-------------:|:-----:|:-----:|:-----:|
@@ -12,4 +12,4 @@
 |G|리버스 가희와 프로세스 1|[바로가기](https://www.acmicpc.net/problem/21777)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/1/7)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/16.svg"></img> |
 |H|가희와 프로세스 2|[바로가기](https://www.acmicpc.net/problem/21778)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/1/8)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/16.svg"></img> |
 
-마지막 업데이트 날짜 : 2025-11-30 00:08:23.542643Z
+마지막 업데이트 날짜 : 2025-11-30 16:24:52.693012Z
