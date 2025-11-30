@@ -26,7 +26,7 @@ for t in range(1, len(gh_data)):
             ch = chr(ord('A') + i)
             problem_title = data["title"]
             problem_link = f"""https://www.acmicpc.net/problem/{data["problemNo"]}"""
-            hint_link = f"""https://github.com/cdog-gh/gh_coding_test/tree/main/1/{i + 1}"""
+            hint_link = f"""https://github.com/cdog-gh/gh_coding_test/tree/main/{t}/{i + 1}"""
             img_script = f"""<img height="25px" width="25px" src="https://static.solved.ac/tier_small/{data["lv"]}.svg"></img>"""
             f.write(f"""|{ch}|{problem_title}|[바로가기]({problem_link})|[힌트]({hint_link})| {img_script} |\n""")
 
