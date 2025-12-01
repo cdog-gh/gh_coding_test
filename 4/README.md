@@ -11,4 +11,4 @@
 |F|가희와 사직 구장|[바로가기](https://www.acmicpc.net/problem/25241)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/4/6)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/15.svg"></img> |
 |G|가희와 영상 추천 시스템|[바로가기](https://www.acmicpc.net/problem/25244)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/4/7)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/19.svg"></img> |
 
-마지막 업데이트 날짜 : 2025-11-30 16:39:12.223127Z
+마지막 업데이트 날짜 : 2025-12-01 00:08:46.372163Z
