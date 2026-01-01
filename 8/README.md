@@ -16,4 +16,4 @@
 |K|가희와 노선 건설 놀이 3|[바로가기](https://www.acmicpc.net/problem/34675)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/8/11)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/16.svg"></img> |
 |L|가희와 신칸센 2|[바로가기](https://www.acmicpc.net/problem/34676)|[힌트](https://github.com/cdog-gh/gh_coding_test/tree/main/8/12)| <img height="25px" width="25px" src="https://static.solved.ac/tier_small/17.svg"></img> |
 
-마지막 업데이트 날짜 : 2025-12-31 00:07:26.898088Z
+마지막 업데이트 날짜 : 2026-01-01 00:08:45.119696Z
