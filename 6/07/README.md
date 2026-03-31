@@ -1,4 +1,4 @@
-# 🔒 가희와 여행 가요 [풀이](https://codingdog.pe.kr/2024/01/07/%ed%81%ac%eb%a3%a8%ec%8a%a4%ec%b9%bc-%ec%95%8c%ea%b3%a0%eb%a6%ac%ec%a6%98-%ec%a0%95%eb%8b%b9%ec%84%b1-%ec%a6%9d%eb%aa%85%ec%9d%84-%ed%95%b4-%eb%b4%85%ec%8b%9c%eb%8b%a4/)
+# 🔒 가희와 여행 가요
 그래프 이론, 그리디, 최소 스패닝 트리
 <details>
 <summary>🔑힌트 1</summary>
